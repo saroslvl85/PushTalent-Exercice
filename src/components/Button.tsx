@@ -28,12 +28,12 @@ export class Button extends React.Component {
         document.body.style.backgroundColor =  "#25353f";
         document.body.style.position = "relative";
         
-        var centerDiv = {
+        /*var centerDiv = {
             position: "absolute" as "absolute",
             top: "50%",
             left: "30%",  
             margin: "auto"      
-        }
+        }*/
 
       /*  function degraded() {
             <svg width="15" height="71" fill="url(#Gradient-1)">
@@ -48,7 +48,7 @@ export class Button extends React.Component {
 
         
         return (   
-            <div style={centerDiv}>           
+            <div /*style={centerDiv}*/>           
                      <button id="Button1" style={buttonStyle}
                                 onClick={() => ChangeStyle()}>
                         Pushtalents</button>
