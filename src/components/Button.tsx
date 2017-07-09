@@ -24,24 +24,35 @@ export class Button extends React.Component {
             margin: "auto"  
         }
   
-        document.body.style.backgroundColor = "#25353f";
+
+        document.body.style.backgroundColor =  "#25353f";
         document.body.style.position = "relative";
         
         var centerDiv = {
-
             position: "absolute" as "absolute",
-            top: "0%",
-            left: "0%",
-
-            
+            top: "50%",
+            left: "30%",  
+            margin: "auto"      
         }
+
+      /*  function degraded() {
+            <svg width="15" height="71" fill="url(#Gradient-1)">
+                <defs>
+                    <linearGradient id="Gradient-1" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#25353f"/> 
+                    <stop offset="100%" stop-color="#5b6c72"/>    
+                    </linearGradient>
+                </defs>
+            </svg>
+        }*/
+
         
-        return (       
-                <div style={centerDiv}>
-                    <button id="Button1" style={buttonStyle}
-                            onClick={() => ChangeStyle()}>
-                    Pushtalents</button>
-                </div>
+        return (   
+            <div style={centerDiv}>           
+                     <button id="Button1" style={buttonStyle}
+                                onClick={() => ChangeStyle()}>
+                        Pushtalents</button>
+            </div>
         )
 
 
